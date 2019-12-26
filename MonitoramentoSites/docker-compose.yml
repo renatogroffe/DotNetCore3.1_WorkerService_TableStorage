@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  worker-monitoramento-sites:
+    image: worker-monitor-sites-3-1
+    build:
+      context: .
+    environment:
+      - BaseMonitoramento=DefaultEndpointsProtocol=https;AccountName=groffestorage;AccountKey=vqYF/Dh/FPFsoo8J4W7TIJYRhbD/L1C3sJjMhxG+4hnHsv5aKdV4G++ePlazM3kGD2QkLP07grcf3VPI6bYJiw==;EndpointSuffix=core.windows.net
